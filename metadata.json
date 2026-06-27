@@ -1,0 +1,6 @@
+{
+  "name": "تطبيق أبو عمر",
+  "description": "تطبيق مراسلة يشبه فيسبوك مسنجر تماماً، مدعوم بالذكاء الاصطناعي لمحادثات تفاعلية وقصص واقعية باسم تطبيق أبو عمر.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
