@@ -1224,13 +1224,22 @@ fun AvatarCircle(
                 .border(1.dp, parsedColor.copy(alpha = 0.4f), CircleShape),
             contentAlignment = Alignment.Center
         ) {
-            Text(
-                text = initials,
-                color = parsedColor,
-                fontWeight = FontWeight.Bold,
-                fontSize = (sizeDp.value * 0.35f).sp,
-                textAlign = TextAlign.Center
-            )
+            if (name.contains("أبو عمر") || name.contains("Abu Omar")) {
+                Image(
+                    painter = painterResource(id = R.drawable.ic_abu_omar_avatar),
+                    contentDescription = name,
+                    modifier = Modifier.fillMaxSize(),
+                    contentScale = ContentScale.Crop
+                )
+            } else {
+                Text(
+                    text = initials,
+                    color = parsedColor,
+                    fontWeight = FontWeight.Bold,
+                    fontSize = (sizeDp.value * 0.35f).sp,
+                    textAlign = TextAlign.Center
+                )
+            }
         }
 
         // Active indicator on bottom corner
